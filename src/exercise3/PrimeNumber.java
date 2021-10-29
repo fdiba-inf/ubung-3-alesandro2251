@@ -14,10 +14,10 @@ public class PrimeNumber{
         while(n>2) {
             if (a <= n / 2) {
                 a++;
-                System.out.println("Prime number: " + prime2);
+                System.out.println("Prime number: " + prime);
                 break;
             }else{
-                System.out.println("Prime number: " + prime);
+                System.out.println("Prime number: " + prime2);
                 break;
             }
         }
