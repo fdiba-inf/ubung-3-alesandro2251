@@ -9,19 +9,21 @@ public class PrimeNumber{
 
      int n = input.nextInt();
         boolean prime = true;
-        boolean prime2= false;
+        boolean prime2 = false;
         int a = 2;
-        while(n>2) {
+        while (n > 2) {
             if (a <= n / 2) {
                 a++;
-                System.out.println("Prime number: " + prime);
-                break;
-            }else{
-                System.out.println("Prime number: " + prime2);
-                break;
+                if (n % a == 0) {
+                    System.out.println("Prime number: " + prime2);
+                    break;
+                } else {
+                    System.out.println("Prime number: " + prime);
+                    break;
+                }
             }
+
+
         }
-
-
     }
 }
