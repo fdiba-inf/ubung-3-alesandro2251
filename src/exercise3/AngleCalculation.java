@@ -10,17 +10,18 @@ public class AngleCalculation{
         double w = input.nextDouble();
         char ch = input.next().charAt(0);
 
+      do{
+        if(ch == 'r') {
+        double d = w / Math.PI * 180;
+        System.out.println("Angle: " + d + "d");
 
-        do{
-          if(ch == 'r'){
-             double r = (w / Math.PI * 180)*2;
-            System.out.println("Angle: " + r + "d" );
-          }
-          else{
-          double g = (w * Math.PI / 180)/2;
-            System.out.println("Angle: "+ g + "r");
-          }
-        }while((ch == 'r')|| (ch == 'd'));
+      } else if(ch == 'd') {
+        double r = w * Math.PI / 180;
+        System.out.println("Angle: " + r + "r");
+      }
+  
+
+    } while(ch == 'r' || ch == 'd');
         
         }
   
