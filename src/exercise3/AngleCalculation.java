@@ -13,12 +13,12 @@ public class AngleCalculation{
 
         do{
           if(ch == 'r'){
-             double r = w / (Math.PI * 180);
-            System.out.println("Angle: " + r );
+             double r = w / Math.PI * 180;
+            System.out.println("Angle: " + r + "d" );
           }
           else{
-          double g= w * (Math.PI / 180);
-            System.out.println("Angle: "+ g );
+          double g= w * Math.PI / 180;
+            System.out.println("Angle: "+ g + "r");
           }
         ch = input.next().charAt(0);
         }while((ch == 'r')|| (ch == 'd'));
