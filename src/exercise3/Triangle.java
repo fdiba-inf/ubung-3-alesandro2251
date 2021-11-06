@@ -7,22 +7,21 @@ public class Triangle {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
+        double a,b,c,p,S;
          do{
-           double a = input.nextDouble();
-           double b = input.nextDouble();
-           double c = input.nextDouble();
+            a = input.nextDouble();
+            b = input.nextDouble();
+            c = input.nextDouble();
          
-         
-         if ((a + b <= c) || (a + c <= b) || (b + c <= a)) {
+        if ((a + b <= c) || (a + c <= b) || (b + c <= a)) {
             System.out.println ("Values are not correct!");
 
-          } else {
-          double  p = (a + b + c) / 2;
-           double s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
-            System.out.println("Area: " + s);
+        } else {
+                p = (a + b + c) / 2;
+            S = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+            System.out.println("Area: " + S);
 
-            if (a == b && a == c) {
+          if (a == b && a == c) {
               System.out.println("Triangle: equilateral");
 
             }  else if (a == b && a != c) {
@@ -36,9 +35,9 @@ public class Triangle {
 
               } else {
                 System.out.println("Triangle: scalene");
-
-            }
-         }
-       } while (a > 0 && b > 0 && c > 0);
+          }
         }
+     } while (a > 0 && b > 0 && c > 0);
+       
+   }
 }
