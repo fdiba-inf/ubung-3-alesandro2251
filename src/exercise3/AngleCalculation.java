@@ -16,7 +16,7 @@ public class AngleCalculation{
         System.out.println("Angle: " + d + "d");
 
   } else{
-        double r = 2*(w * Math.PI / 180);
+        double r = (w * Math.PI / 180)/2;
         System.out.println("Angle: " + r + "r");
       }
       ch = input.next().charAt(0);
