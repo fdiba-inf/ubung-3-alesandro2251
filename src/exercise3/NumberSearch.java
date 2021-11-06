@@ -13,7 +13,7 @@ public class NumberSearch{
                 }
             } else {
                 if (i % 5 == 0 && i % 6 == 0) {
-                    System.out.println(i + " ");
+                    System.out.println(i);
                     counter = 0;
                 }
             }
