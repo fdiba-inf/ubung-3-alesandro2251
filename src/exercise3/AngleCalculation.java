@@ -7,17 +7,17 @@ public class AngleCalculation{
   public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        double winkel = input.nextDouble();
+        double w = input.nextDouble();
         char ch = input.next().charAt(0);
 
 
         do{
           if(ch == 'r'){
-             double r = (winkel * Math.PI)/180;
+             double r = w / (Math.PI * 180);
             System.out.println("Angle: " + r );
           }
           else{
-          double g= (winkel*180)/Math.PI;
+          double g= w * (Math.PI / 180);
             System.out.println("Angle: "+ g );
           }
         ch = input.next().charAt(0);
